@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:16
+    container_name: soundcloud-clone-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: soundcloud
+      POSTGRES_PASSWORD: soundcloud
+      POSTGRES_DB: soundcloud
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U soundcloud -d soundcloud"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  pgdata:
