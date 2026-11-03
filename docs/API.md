@@ -4,7 +4,7 @@ Base URL: `http://localhost:3000`
 
 The server must be running (`npm run dev` inside `backend`) and the database must be set up (`npm run db:setup`). Demo audio files are short generated tones.
 
-You can test these endpoints with curl, Postman, or Swagger UI at [http://localhost:3000/api/docs](http://localhost:3000/api/docs). Setup is in the README section [Try the API](../README.md#4-try-the-api).
+You can test these endpoints with curl, [Postman](https://www.postman.com/downloads/), or Swagger UI at [http://localhost:3000/api/docs](http://localhost:3000/api/docs). Setup is in the README section [Try the API](../README.md#4-try-the-api).
 
 Send JSON requests with the header `Content-Type: application/json`. Uploads are the exception: they use multipart form data, described below.
 
@@ -215,7 +215,7 @@ const response = await fetch("http://localhost:3000/api/tracks", {
 
 `201` returns `{ "track": { ... } }`. The new track is also returned by the feed and by that user's profile.
 
-The same upload works in curl or in Postman (Body → form-data, file field `audio`).
+The same upload works in curl or in [Postman](https://www.postman.com/downloads/) (Body → form-data, file field `audio`).
 
 curl:
 

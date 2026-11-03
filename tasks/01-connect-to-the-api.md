@@ -6,7 +6,7 @@
 
 ## Before you start
 
-- Postgres and the API are running. `curl http://localhost:3000/api/health` returns `{"ok":true}`. Postman can make that same request.
+- Postgres and the API are running. `curl http://localhost:3000/api/health` returns `{"ok":true}`. [Postman](https://www.postman.com/downloads/) can make that same request.
 - The frontend starter is in `frontend/`. If Vite is not running yet, follow [Start the frontend](../README.md#5-start-the-frontend).
 - Vite is running, usually at `http://localhost:5173`.
 

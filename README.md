@@ -10,10 +10,12 @@ The API is for learning on your own computer. Do not put it on the public intern
 
 ## Prerequisites
 
-Install these, then open a terminal in this repository:
+Download and install these, then open a terminal in this repository:
 
-- [Node.js 20 or newer](https://nodejs.org/) (`node -v`)
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) (the Docker engine must be running)
+- [Node.js 20 or newer](https://nodejs.org/en/download/) — use the LTS installer (`node -v`)
+- Docker Desktop for [Mac](https://docs.docker.com/desktop/setup/install/mac-install/), [Windows](https://docs.docker.com/desktop/setup/install/windows-install/), or [Linux](https://docs.docker.com/desktop/setup/install/linux/). The Docker engine must be running.
+- [DBeaver Community](https://dbeaver.io/download/) — to look at the rows in the database
+- [Postman](https://www.postman.com/downloads/) — to call the API. curl is already on macOS and Windows.
 
 ## 1. Start the database
 
